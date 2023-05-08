@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home"
+    tools:ignore="UnusedNavigation">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appreading.pagemain.fragment.HomeFragment"
+        android:label="@string/app_reading"
+        app:defaultNavHost="true"
+        tools:layout="@layout/home_main">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_discovery"
+        android:name="com.example.appreading.pagemain.fragment.BannerFragment"
+        android:label="Category"
+        app:defaultNavHost="true"
+        tools:layout="@layout/banner" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.example.appreading.pagemain.fragment.DiscoveryFragment"
+        android:label="@string/menu_messenger"
+        app:defaultNavHost="true"
+        tools:layout="@layout/guide_main" />
+    <fragment
+        android:id="@+id/nav_individual"
+        android:name="com.example.appreading.pagemain.fragment.PerFragment"
+        android:label="Information"
+        app:defaultNavHost="true"
+        tools:layout="@layout/login" />
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.appreading.pagemain.fragment.LoginFragment"
+        android:label="Login"
+        app:defaultNavHost="true"
+        tools:layout="@layout/login" />
+</navigation>
